@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support chatbox--active">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <!-- <img src="https://img.icons8.com/plasticine/75/null/super-mario.png" alt="image"/> -->
+                    
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Information Retrieval Bot</h4>
+                    <p class="chatbox__description--header">Hi, I am IR-535. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div>
+
+                </div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" id="message" placeholder="Type here...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+            <div class="chatbox__footer">
+                <!-- <p class="chatbox__description--header">Select topic:</p> -->
+                <div>
+                    <div class="topic-class">
+                        <input type="radio" name="topic" id="Education">
+                        <label for="Education">Education</label>
+                    </div>
+                    <div class="topic-class">
+                        <input type="radio" name="topic" id="Politics">
+                        <label for="Politics">Politics</label>
+                    </div>
+                    <div class="topic-class">
+                        <input type="radio" name="topic" id="Environment">
+                        <label for="Environment">Environment</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="topic-class">
+                        <input type="radio" name="topic" id="Healthcare">
+                        <label for="Healthcare">Healthcare</label>
+                    </div>
+                    <div class="topic-class">
+                        <input type="radio" name="topic" id="Technology">
+                        <label for="Technology">Technology</label>
+                    </div>
+                    <div class="topic-class">
+                        <input type="radio" name="topic" id="All" checked >
+                        <label for="All">All</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

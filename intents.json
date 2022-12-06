@@ -1,0 +1,1591 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hey there,how can I help you?"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "welcome",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hey there,how can I help you?",
+        "how is your day going?",
+        "what is your name?"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "I'm doing great , how are you?"
+
+      ]
+    },
+
+    {
+      "tag": "name",
+      "patterns": [
+        
+        "who are you",
+        "Is anyone there?",
+        "what is your name?"
+      ],
+      "responses": [
+        "I'm a domain based chatbot",
+        "I'm a chatbot",
+        "I'm an IR 535 chatbot, what's your name?"
+      ]
+    },
+    {
+      "tag": "good morning",
+      "patterns": [
+        
+        "good morning"
+      ],
+      "responses": [
+        "Good morning, how are you?",
+        "Good morning, how can I help you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "health insurance",
+      "patterns": ["how is health insurance in US", "what is mediaid", "health insurance fragementation","Should I get health insurance?","How can I get health insurance without a job?"],
+      "responses": [
+        "Generally insurance only pays up to a point. Bodily injury limits are different in each state but getting run over could easily exceed those limits. Also, many people don't have insurance",
+        "Personally I wouldn't risk it. If you were in an accident, had a stroke or aneurysm, or were diagnosed with a serious chronic health condition like MS or cancer it would be financially devastating.",
+        "Health insurance is always a good thing to have because you never know what could happen!! ",
+        "Definitely get insurance. But not all plans are the same. If its through your job, check with coworkers that have it already and see if it would be good for your needs. If it sucks, look into Obamacare plans."
+      ]
+    },
+    {
+      "tag": "medicare",
+      "patterns": ["what is medicare", "Thank you", "medicare and pharmacy", "is medicare mandatory","is dental covered in medicare"],
+      "responses": ["Medicare works for people who are more than 60 years of age", "medicare does cover all the healthcare benifits", "The fedeal government pays for all the medicare coverage"]
+    },
+    {
+      "tag": "medicaid",
+      "patterns": ["medicaid","what is medicaid", "Thank you", "medicaid and pharmacy", "is medicaid mandatory","is dental covered in medicaid","What is the lowest income to qualify for Medicaid?","What does Medicaid cover ?","medicaid","How do you get Medicaid?","Who pays for Medicaid?","Who benefits the most from Medicaid?","How much is Medicare monthly?","Is Medicaid a insurance?"],
+      "responses": ["medicaid works for people who are poor financially", "medicaid does cover all the healthcare benifits", "The fedeal government pays for all the medicaid coverage"]
+    },
+ {
+      "tag": "ambulance",
+      "patterns": ["where can i find ambulance service in my phone ", "how is the ambulance service ", "EMS service"],
+      "responses": ["ambulance service mmight not be included in the health insurance plan", "call 911 for any assistance", " a person's life is given the atmost importance than anything in this country"]
+    },
+{
+      "tag": "pharmacy",
+      "patterns": ["what is the price of the paracetamol","whats is the price of the medicine","how is pharmacy prices around the world", "pharmacy bills", "Sales of the pharmacy"],
+      "responses": ["pharmacy prices are decided by the companies", "pharmacy bills might might not be controlled by health insurance plan", "the government provides subsidy on the pharmacy bills"]
+    },
+{
+      "tag": "doctor",
+      "patterns": ["where is the doctor","should i visit a doctor", "where can i find a doctor ?", "is the doctor self well qualified","Does this need immediate medical attention"],
+      "responses": ["Please visit the nearest healthacre facility for any assistance","the doctor is the primary point of contact "]
+    },
+{
+      "tag": " covid 19 ",
+      "patterns": ["what is covid 19", "where can i find a doctor ?", "covid 19 pandameic","how to deal with the covid 19 pandamic","covid 19 virus"],
+      "responses": ["a vaccine has been found for covid19 ", "Please follow the doctr's prescription for your betterment", "the covid19 created a global emergency","Please put your mask on to be safe from covid 19 virus","Always visit hospital for any medical assisstance on covid 19"]
+    },
+    {
+      "tag": " covid  ",
+      "patterns": ["what is covid ", "where can i find a doctor for covid ?", "covid pandameic","how to deal with the covid pandamic","covid virus","oxygen for covid","ambulance for covid"],
+      "responses": ["a vaccine has been found for covid19 ","the covid19 created a global emergency","Please put your mask on to be safe from covid 19 virus","Always visit hospital for any medical assisstance on covid 19"]
+    },
+    {
+      "tag": "covid mask",
+      "patterns": ["how many people died because of covid 19","what is covid mask", "where can i find a doctor for covid mask?", "covid pandameic mask","how to deal with the covid pandamic  mask","covid virus mask","oxygen for covid mask","ambulance for covid mask"],
+      "responses": ["a vaccine has been found for covid19 ", "the covid19 created a global emergency","Please put your mask on to be safe from covid 19 virus","Always visit hospital for any medical assisstance on covid 19"]
+    },
+{
+      "tag": "medicine and prescription",
+      "patterns": ["should i take the medicine", "medicine and prescription", "are taking medical drugs safe","please follow the appropriate prescription","medicine to fight the disease"],
+      "responses": ["take the medicine as suggested by the doctor", "Please follow the doctr's prescription for your betterment", "medicines are always safe if taken at appropriate time","Please put your mask on to be safe from covid 19 virus","Always visit hospital for any medical assisstance on taking the medicines"]
+    },
+{
+      "tag": "The state of healthcare in America",
+      "patterns": ["what is healthacare insurance", "insurance and health insurance", "insurance and medicare","insurance and pharmacy","insurance and ambulance","insurance and doctor","insurance and covid 19","insurance and covid ","insurance and covid mask","insurance and medicine and prescription","state of healthcare",""],
+      "responses": ["insurance is a contract between the insurer and the insured", "insurance is a contract between the insurer and the insured", "insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured"]
+    },
+    {
+      "tag": "healthcare",
+      "patterns": ["What is the purpose of healthcare?", "Why is healthcare so important?", "are taking medical drugs safe","please follow the appropriate prescription","What are goals of care in healthcare?","How can we improve healthcare?","Healthcare sector","What are the main health services?", "What are the basic things for health care ?","Why free healthcare is important?","importance of healthcare","How do you manage healthcare?","Is health care a right or a privilege?","What is a synonym for healthcare?"],
+      "responses": ["The fundamental purpose of health care is to enhance quality of life by enhancing health. ", "High-quality health care helps prevent diseases and improve quality of life.", "medicines are always safe if taken at appropriate time","Goals of care describe what a patient wants to achieve during an episode of care, within the context of their clinical situation.","Always visit hospital for any medical assisstance on taking the medicines","The right to health for all people means that everyone should have access to the health services they need, when and where they need them, without suffering financial hardship.",""]
+    },
+    {
+      "tag": "Emergency room",
+      "patterns": ["where is the emergency rooom","What to say to get seen faster in an emergency room?", "How long can a patient stay in emergency room?","emergency room","emergency services and ambulance","What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of hospital?","What is hospital and its types?","What are the services of hospital?","What is the most important part of a hospital?","What are the main four functions of hospital?","What is patient care in hospital?","What are the characteristics of a hospital?","What is an ideal hospital?","What is the most important part of a hospital?","What type of hospital is most common?","What are types of health?","Which are the best hospitals?","What are types of health?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","Hospitals complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","Nursing services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {
+      "tag": "urgent room",
+      "patterns": ["What to say to get seen faster in an urgent room?", "How long can a patient stay in urgent room?","urgent room","emergency services and ambulance","What are the most common reasons go to the urgent room?","disease and emergency condition","What is the role of hospital?","What is hospital and its types?","What are the services of hospital?","What is the most important part of a hospital?","What are the main four functions of hospital?","What is patient care in hospital?","What are the characteristics of a hospital?","What is an ideal hospital?","What is the most important part of a hospital?","What type of hospital is most common?","What are types of health?","Which are the best hospitals?","What are types of health?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","Hospitals complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","Nursing services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {
+      "tag": "hospital",
+      "patterns": ["What to say to get seen faster in an emergency room?", "How long can a patient stay in emergency room?","emergency room","emergency services and ambulance","What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of hospital?","What is hospital and its types?","What are the services of hospital?","What is the most important part of a hospital?","What are the main four functions of hospital?","What is patient care in hospital?","What are the characteristics of a hospital?","What is an ideal hospital?","What is the most important part of a hospital?","What type of hospital is most common?","What are types of health?","Which are the best hospitals?","What are types of health?","What is after hospital care called?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","Hospitals complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","Nursing services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {
+      "tag": "healthacre facility",
+      "patterns": ["What to say to get seen faster in an emergency room?", "How long can a patient stay in emergency room?","emergency room","emergency services and ambulance","What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of hospital?","What is hospital and its types?","What are the services of hospital?","What is the most important part of a hospital?","What are the main four functions of hospital?","What is patient care in hospital?","What are the characteristics of a hospital?","What is an ideal hospital?","What is the most important part of a hospital?","What type of hospital is most common?","What are types of health?","Which are the best hospitals?","What are types of health?","What is after hospital care called?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","Hospitals complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","Nursing services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {
+      "tag": "Nursing",
+      "patterns": ["What to say to get seen faster in an emergency room?", "How long can a patient stay in emergency room?","emergency room","emergency services and ambulance","What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of Nursing?","What is Nursing and its types?","What are the services of Nursing?","What is the most important part of a Nursing?","What are the main four functions of Nursing?","What is patient care in Nursing?","What are the characteristics of a Nursing?","What is an ideal Nursing?","What is the most important part of a Nursing?","What type of Nursing is most common?","What are types of health?","Which are the best Nursings?","What are types of health?","What is after Nursing care called?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","Nursings complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","Nursing services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {
+      "tag": "clinic",
+      "patterns": ["What to say to get seen faster in an emergency room?", "How long can a patient stay in emergency room?","emergency room","emergency services and ambulance","What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of clinic?","What is clinic and its types?","What are the services of clinic?","What is the most important part of a clinic?","What are the main four functions of clinic?","What is patient care in clinic?","What are the characteristics of a clinic?","What is an ideal clinic?","What is the most important part of a clinic?","What type of clinic is most common?","What are types of health?","Which are the best clinics?","What are types of health?","What is after clinic care called?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","clinics complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","clinic services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {
+      "tag": "infirmary",
+      "patterns": ["What to say to get seen faster in an emergency room?", "How long can a patient stay in emergency room?","emergency room","emergency services and ambulance","What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of infirmary?","What is infirmary and its types?","What are the services of infirmary?","What is the most important part of a infirmary?","What are the main four functions of infirmary?","What is patient care in infirmary?","What are the characteristics of a infirmary?","What is an ideal infirmary?","What is the most important part of a infirmary?","What type of infirmary is most common?","What are types of health?","Which are the best infirmarys?","What are types of health?","What is after infirmary care called?"],
+      "responses": ["It can be anywhere from less than one hour to many hours from when patients arrive in the emergency department and are first assessed", "The doctor will examine you as soon as possible and order tests as needed.","Emergency services in health sector is given the utmost importance","infirmarys complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","infirmary services are considered one of the most important aspects in the process of distinguished medical care."]
+    },
+    {"tag":"vaccine injuiries",
+	 "patterns":["Vaccine injuries once off payment as an alternative to legal action. Claim from Medicare via My Gov.","Are vaccine-related injuries or deaths related to vaccines that are not yet licensed in the U.S. compensable under the National Vaccine Injury Compensation Program (VICP)?",""],
+	 "responses": ["If you are allergic to PEG, you should not get an mRNA COVID-19 vaccine. Ask your doctor if you can get the J&J/Janssen vaccine.","It depends on whether the vaccine falls within a category of vaccines already covered by the VICP."]
+	 },
+   {
+    "tag": "The state of healthcare in America",
+    "patterns": ["what is healthacare insurance", "insurance and health insurance", "insurance and medicare","insurance and pharmacy","insurance and ambulance","insurance and doctor","insurance and covid 19","insurance and covid ","insurance and covid mask","insurance and medicine and prescription","state of healthcare",""],
+    "responses": ["insurance is a contract between the insurer and the insured", "insurance is a contract between the insurer and the insured", "insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured","insurance is a contract between the insurer and the insured"]
+  },
+  {
+    "tag": "Pediatrician",
+    "patterns": ["What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of pediatrician?","What is pediatrician and its types?","What are the services of pediatrician?","What is the most important part of a pediatrician?","What are the main four functions of pediatrician?","What is patient care in pediatrician?","What are the characteristics of a pediatrician?","What is an ideal pediatrician?","What is the most important part of a pediatrician?","What type of pediatrician is most common?","What are types of health?","Which are the best pediatricians?","What are types of health?","What is after pediatrician care called?"],
+    "responses": ["A pediatrician is a doctor who focuses on the health of infants, children, adolescents and young adults", "Paediatricians and specialists in paediatric fields are doctors who manage medical conditions affecting young children, infants, and adolescents", "The doctor will examine you as soon as possible and order tests as needed.","pediatricians complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions.","pediatrician services are considered one of the most important aspects in the process of distinguished medical care."]
+  },
+  {
+    "tag": "cardiologist ",
+    "patterns": ["What are the most common reasons go to the emergency room?","disease and emergency condition","What is the role of cardiologist ?","What is cardiologist  and its types?","What are the services of cardiologist ?","What is the most important part of a cardiologist ?","What are the main four functions of cardiologist ?","What is patient care in cardiologist ?","What are the characteristics of a cardiologist ?","What is an ideal cardiologist ?","What is the most important part of a cardiologist ?","What type of cardiologist  is most common?","What are types of health?","Which are the best cardiologist s?","What are types of health?","What is after cardiologist  care called?"],
+    "responses": ["A cardiologist is a physician who's an expert in the care of your heart and blood vessels","A cardiologist is a heart doctor. They specialize in treating heart conditions and diseases as well as helping patients manage their heart conditions as much as possible","A cardiologist will treat any symptoms of heart conditions that you have and diagnose any possible conditions."]
+  },
+  {
+    "tag": "cancer",
+    "patterns": ["what is cancer", "treatment for cancer","symptoms of cancer","what is the cause of cancer","lung cancer","kidney cancer","melanoma","what is breast cancer ","What is liver cancer","what is prostate cancer","What is the role of hospital?","treatment for brain cancer","What is the main cause of cancer"],
+    "responses": ["A disease in which abnormal cells divide uncontrollably and destroy body tissue.", "Cancer is a disease in which some of the body's cells grow uncontrollably and spread to other parts of the body.","A cancer can grow into,or begin to push on nearby organs, blood vessels, and nerves","Cancer cells take up the needed space and nutrients that the healthy organs would use. As a result, the healthy organs can no longer function"]
+  },
+  {
+    "tag": "surgery",
+    "patterns": ["what is surgery", "treatment for surgery","symptoms of surgery","what is the cause of surgery","lung surgery","kidney surgery","melanoma","what is breast surgery ","What is liver surgery","what is prostate surgery","What is the role of hospital?","treatment for brain surgery","What is the plastic surgery", "why is surgery required","what is called surgery","why do surgeries fail","how is surgery done","where is surgery done"],
+    "responses": ["the treatment of injuries or diseases in people or animals by cutting open the body and removing or repairing the damaged part", "Surgery is medical treatment in which someone's body is cut open so that a doctor can repair, remove, or replace a diseased or damaged part.","A surgery can grow into,or begin to push on nearby organs, blood vessels, and nerves"]
+  },
+  {
+    "tag": "operation",
+    "patterns": ["what is operation", "treatment for operation","symptoms of operation","what is the cause of operation","lung operation","kidney operation","melanoma","what is breast operation ","What is liver operation","what is prostate operation","What is the role of hospital?","treatment for brain operation","What is the plastic operation", "why is operation required","what is called operation","why do surgeries fail","how is operation done","where is operation done"],
+    "responses": ["the treatment of injuries or diseases in people or animals by cutting open the body and removing or repairing the damaged part", "operation is medical treatment in which someone's body is cut open so that a doctor can repair, remove, or replace a diseased or damaged part.","A operation can grow into,or begin to push on nearby organs, blood vessels, and nerves"]
+  },
+  {
+    "tag": "bacteria",
+    "patterns": ["what is bacteria", "what is bacetrial infection","how to prevent bacterial infection","bacteria","treatment for bacteria disease"],
+    "responses": ["a member of a large group of unicellular microorganisms which have cell walls but lack organelles and an organized nucleus, including some that can cause disease.", "A bacterium is a single, but complex, cell. It can survive on its own, inside or outside the body. ","Antibiotics are used to treat or prevent some types of bacterial infection."]
+  },
+  {
+    "tag": "virus",
+    "patterns": ["what is virus", "what is bacetrial infection","how to prevent virusl infection","virus","treatment for virus disease","covid 19 virus","corona virus","covid virus"],
+    "responses": ["a member of a large group of unicellular microorganisms which have cell walls but lack organelles and an organized nucleus, including some that can cause disease.", "A bacterium is a single, but complex, cell. It can survive on its own, inside or outside the body. ","Antibiotics are used to treat or prevent some types of virusl infection."]
+  },
+  {
+    "tag": "cough",
+    "patterns": ["what is cough","what is the treatment for cough","what is the cause of cough","what is cough and infection","how to stop cough","how to treat cough","how to treat cough","severe cough"],
+    "responses": ["cough is a sudden, forceful hacking sound to release air and clear an irritation in the throat or airway.", "Most coughs do go away on their own. Home remedies and over-the-counter cough medicines can help relieve symptoms.","A cough is a spontaneous reflex. When things such as mucus, germs or dust irritate your throat and airways","Bronchitis is an infection of the main airways of the lungs (bronchi), causing them to become irritated and inflamed. The main symptom is a cough, which may bring up yellow-grey mucus (phlegm)"]
+  },
+  {
+    "tag": "fever",
+    "patterns": ["what is fever","what is the treatment for fever","what is the cause of fever","what is fever and infection","how to stop fever","how to treat fever","how to treat fever","severe fever"],
+    "responses": ["A fever is a temporary rise in body temperature. It's one part of an overall response from the body's immune system.", "Most fevers do go away on their own. Home remedies and over-the-counter fever medicines can help relieve symptoms.","Rest and drink plenty of fluids. Medication isn't needed. Call the doctor if the fever is accompanied by a severe headache, stiff neck, shortness of breath, or other unusual signs or symptoms"]
+  },
+  {
+    "tag": "flu",
+    "patterns": ["what is flu","what is the treatment for flu","what is the cause of flu","what is flu and infection","how to stop flu","how to treat flu","how to treat flu","severe flu"],
+    "responses": ["Flu virus infection of the respiratory tract can trigger an extreme inflammatory response in the body and can lead to sepsis.", "Most flus do go away on their own. Home remedies and over-the-counter flu medicines can help relieve symptoms.","Rest and drink plenty of fluids. Medication isn't needed. Call the doctor if the flu is accompanied by a severe headache, stiff neck, shortness of breath, or other unusual signs or symptoms"]
+  },
+  {
+    "tag": "joint aches",
+    "patterns": ["what is joint aches","what is the treatment for joint aches","what is the cause of joint aches","what is joint aches and infection","how to stop joint aches","how to treat joint aches","how to treat joint aches","severe joint aches"],
+    "responses": ["Physical discomfort where two or more bones meet to form a joint, ranging from mild to disabling.", "Most joint achess do go away on their own. Home remedies and over-the-counter joint aches medicines can help relieve symptoms.","Rest and drink plenty of joint achesids. Medication isn't needed. Call the doctor if the joint aches is accompanied by a severe headache, stiff neck, shortness of breath, or other unusual signs or symptoms","A vitamin D deficiency can affect both physical and mental health", "but many people have low levels of vitamin D without realizing."]
+  },
+  {
+    "tag": "disease",
+    "patterns": ["what is malaria","what is aids","what is dengue","how bad is the disease","how to stop joint aches","how to treat joint aches","how to treat joint aches","severe joint aches"],
+    "responses": ["Please reach out to the nearest healthcare facility", "Call 911 for any medical assisstance","Rest and drink plenty of joint achesids. Medication isn't needed. Call the doctor if the joint aches is accompanied by a severe headache, stiff neck, shortness of breath, or other unusual signs or symptoms"]
+  },
+  {
+    "tag": "Cloud",
+    "patterns": [
+        "what are cloud storage solutions?",
+        "what is a hybrid cloud",
+        "who are cloud storage providers?",
+        "what is a service cloud?",
+        "tell me about cloud architecture",
+        "what is a cloud server?",
+        "what is cloud hosting?",
+        "who can provide me cloud services?",
+        "What is cloud computing?",
+        "What are the benefits of cloud computing?"
+    ],
+    "responses": [
+          "cloud computing is the delivery of computing services",
+          "benefits are flexibility, efficiency, scalability, security, increased collaboration and reduced costs",
+          "applications run in combination of different environments in hybrid",
+          "deliver service to every customer, anytime, anywhere with service cloud",
+          "cloud providers are Amazon Cloud Drive, Apple iCloud, Box, Carbonite, Dropbox, Google Drive, Microsoft OneDrive", 
+          "Mozy, SOS Online Backup, SugarSync and Western Digital My Cloud",
+          "cloud providers provide storage solutions and cloud servers",
+          "Cloud hosting makes applications and websites accessible using cloud resources",
+          "architecture is design of a computing system and interrelationships between its components",
+          "cloud servers are is a pooled, centralized server resource that is hosted and delivered over the Internet"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Cybersecurity",
+    "patterns": [
+        "what is IT security",
+        "how to handle cybersecurity attack",
+        "which computer security softwares to use?",
+        "what does a cybersecurity analyst do?",
+        "which cybersecurity companies can I work for",
+        "what does a cybersecurity engineer do?"
+    ],
+    "responses": [
+        "Cybersecurity technologies protect organizations, their critical systems and sensitive information from digital attacks",
+        "Cybersecurity helps protect the confidentiality, integrity, and availability of computer resources against cyber-attacks or unauthorized access",
+        "Cubersecurity types are critical infrastructure security, Application security, Network security", 
+        "Cloud security,Internet of Things (IoT) security",
+        "IT security prevents the manipulation of data and systems by unauthorized third parties",
+        "Cybersecurity analyst is a trained cyberprofessional with expertise in network and IT infrastructure security",
+        "Cyber engineers create and manage hardware, software, and security policies for the protection of systems, networks, and data",
+        "IBM , Microsoft Services, Cisco, Oracle, Palo Alto Networks, Fortinet, Crowdstrike, Okta companies provide Cybersecurity softwares"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "IT services",
+    "patterns": [
+        "Information technology specialist",
+        "what does an IT manager do?",
+        "what is infrastructure as a service?",
+        "technology consulting",
+        "what is a tech solutions",
+        "how to manage IT services?"
+    ],
+    "responses": [
+        "IT managers implement and maintain IT solutions for a business",
+        "Tech solutions is a set of related software programs and/or services that are sold as a single package",
+        "IT managers combine project management, operational management, computer systems, networking, and people skills to successfully design, implement and maintain IT solutions for a business.",
+        "Infrastructure as a service (IaaS) is a type of cloud computing service that offers essential compute, storage, and networking resources on demand, on a pay-as-you-go basis"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Programming",
+    "patterns": [
+        "What is the most popular programming language?",
+        "Suggest some courses for learning programming",
+        "Angularjs vs React",
+        "List programming platforms",
+        "What does a software developer do?"
+    ],
+    "responses": [
+        "Python, JavaScript, and Java are the most popular programming languages",
+        "You can find many courses on Coursera and Udemy for learning programming",
+        "Angular is a framwork and react is a library",
+        "Leetcode, hackerrank, hackerearth are all programming platforms",
+        "Software developers design, program, build, deploy and maintain software"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Software development",
+    "patterns": [
+        "What is the most popular programming language?",
+        "what does a software developer do?",
+        "Suggest some courses for learning programming",
+        "Angularjs vs React",
+        "List programming platforms",
+        "What does a software developer do?"
+    ],
+    "responses": [
+        "Python, JavaScript, and Java are the most popular programming languages",
+        "You can find many courses on Coursera and Udemy for learning programming",
+        "Angular is a framwork and react is a library",
+        "Leetcode, hackerrank, hackerearth are all programming platforms",
+        "Software developers design, program, build, deploy and maintain software"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "coding",
+    "patterns": [
+        "What is the most popular programming language?",
+        "what does a software developer do?",
+        "Suggest some courses for learning programming",
+        "when to use Angularjs and React?",
+        "which programming platforms are popular?",
+        "What does a software developer do?"
+    ],
+    "responses": [
+        "Python, JavaScript, and Java are the most popular programming/coding languages",
+        "You can find many courses on Coursera and Udemy for learning programming/coding",
+        "Angular is a framwork and react is a library used for web programming",
+        "Leetcode, hackerrank, hackerearth are all popular programming/coding platforms",
+        "Software developers design, program, build, deploy and maintain software"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Layoffs",
+    "patterns": [
+        "Google layoffs number", 
+        "How many employees did amazon fire?", 
+        "IT companies and layoffs", 
+        "Where can I find layoffs statistics?" ],
+    "responses": [ 
+        "Google is planning to let go of 10000 of their least performing employees", 
+        "Amazon fired 10000 employees", 
+        "Many IT companies laid off employees", 
+        "You can find layoffs statistic on https://layoffs.fyi"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Microservices",
+    "patterns": [
+        "what are commonly used tools for Microservices", 
+        "What is Monolithic Architecture?", 
+        "When to use microservice architecture", 
+        "which are famous companies which are using Microservice architecture",
+        "Why are Container used in Microservices",
+        "What is the use of Docker"
+    ],
+    "responses": [ 
+        "Microservices tools - WireMock, Docker and Hystrix are important Microservices tools", 
+        "Monolithic architecture is like a big container in which all the software components of an application are clubbed inside a single package", 
+        "Microservice architecture is best suited for desktop, web, mobile devices, Smart TVs, Wearable, etc", 
+        "Most large-scale companies like Twitter, Netflix, Amazon are using microservices architecture",
+        "Containers are easiest and effective method to manage the microservice based application",
+        "Docker offers a container environment which can be used to host any application"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},
+{
+    "tag": "Data science",
+    "patterns": [
+        "how much do data scientists make?", 
+        "where can I learn data science?", 
+        "find data science jobs for me",
+        "what are the courses for data science?",
+        "what is the salary of data scientist"
+    ],
+    "responses": [ 
+        "data scientists make salary of 100k dollars per year",
+        "you can find data science courses on coursera or udemy",
+        "you can learn about data science on coursera or udemy",
+        "data science is used for analyzing data for actionable insights",
+        "data science is one of the hot topics in IT right now",
+        "you can find data scientist jobs on linkedin"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Machine Learning",
+    "patterns": [
+        "what are machine learning algorithms?", 
+        "what is machine learning?", 
+        "what is the use of supervised learning?", 
+        "what is the use of unsupervised learning?",
+        "what is the use of reinforcement learning?",
+        "what is the use of deep learning?",
+        "how to train data using machine learning?",
+        "how do self driving cars work?"
+    ],
+    "responses": [ 
+        "Machine learning is a field of inquiry devoted to understanding and building methods that leverage data to improve performance on some set of tasks.", 
+        "The applications of machine learning will be used hgighly in future",
+        "machine learning is one of the hot fields currently",
+        "you can use machine learning in many organizations and institutes",
+        "machine learning algorithms are used to implement machine learning techniques in real time",
+        "self driving cars use machine learning to learn and imorove the performance"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "Salary",
+    "patterns": [
+        "what is the standard salary of a software developer?", 
+        "how much does a software architect make?",
+        "what is the highest paid job in IT?" 
+    ],
+    "responses": [ 
+        "software developers have a standard salary of 100k dollars per year",
+        "data scientist is the highest paid job in IT",
+        "sofware architects make 150k dollars per year on average"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "technology",
+    "patterns": [
+        "what is technology?", 
+        "How will technology help humans in the future?", 
+        "Is technoology making our lives better?"
+    ],
+    "responses": [ 
+        "technology is used highly for automation and reduce human labour",
+        "technology will play a vital role in the betterment of human kind",
+        "technology makes our day-to-day life better"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "information retrieval",
+    "patterns": [
+        "what is information retrieval?", 
+        "what is indexing?", 
+        "what are the applications of information retrieval?"
+    ],
+    "responses": [ 
+        "information retrieval uses techniques of storing and recovering and often disseminating recorded data especially through the use of a computerized system.", 
+        "Indexing is an important process in Information Retrieval (IR) systems", 
+        "Web search engines are the most visible IR applications",
+        "information retrieval is used for querying datasets"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "artificial intelligence",
+    "patterns": [
+        "what is artificial intelligence?", 
+        "are machine learning and artificial intelligence the same thing?", 
+        "what are common uses of artificial intelligence?"
+    ],
+    "responses": [ 
+        "Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems",
+        "machine learning is a subset of artificial intelligence",
+        "artificial intelligence has applications from personalised shoppinng autonomous vehicles"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},{
+    "tag": "blockchain",
+    "patterns": [
+        "what does a blockchain do?", 
+        "what is a cryptocurrency?", 
+        "is blockchain and bitcoin the same?",
+        "what are blockchain platforms?"
+    ],
+    "responses": [ 
+        "blockchain is a decentralized, distributed and public digital ledger that is used to record transactions across many computers",
+        "blockchain is used for cryptocurrency which is a digital currency, which is an alternative form of payment created using encryption algorithms",
+        "bitcoin is a cryptocurrency, it uses blockchain",
+        "coinbase, ethereum are blockchain platforms"
+    ],
+    "extension":  {
+          "function": "",
+          "entities": false,
+          "responses": []
+    },
+    "context":  {
+          "in": "",
+          "out": "",
+          "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+},
+{
+  "tag": "Acid Rains",
+  "patterns": [
+        "what are the causes of acid rain?", "what is acid rain?", "does acid rain affect humans or plants?", "what chemicals are in acid rain?", "why is acid rain harmful?", "how can we prevent acid rain?"
+        ],
+  "responses": [
+"In acid rains Wet and dry deposition can contribute to the accumulation of acidic air pollution on the Earth’s surface. Wet deposition is caused by rain and humid weather, whereas acidic pollutants and dust mixing cause dry deposition.",
+"acid rain that contains harmful chemicals that collect in the atmosphere when fossil fuels are burned",
+"Sulphur dioxide is generated when fossil fuels are burned. Sulphur generates a sulphate ion when it reaches the atmosphere. The sulphate ion subsequently combines with hydrogen atoms to form sulphuric acid. This then falls as acid rain.",
+"Prevention can be done by conserving energy, use less pollution fuels, Before release, remove sulphur and nitrogen oxides, use cleaner fuels, flue gas Desulphurisation",
+"NO has a greater presence in the emissions, but in the presence of atmospheric oxygen, it quickly transforms into NO2.",
+"When they rise to the atmosphere, these agents are oxidized and hydrolyzed, producing strong acids like sulfuric acid and nitric acid."
+
+  ]
+},
+{
+  "tag": "Climate",
+  "patterns": [
+"Is it climate change, global warming, or global climate crisis?", "What are the main threats of climate change?", "How is climate change affecting animals?", "How is climate change affecting people?", "What are solutions to climate change?", "What happens if we do nothing to stop climate change?", "how much rainfall is occured this year?", "how bad is climate in antarctica?", "how sunny is it?", "how cold the weather is?", "how much did it snow?", "how much did it rain?", "How does climate change affect people’s health?", "How can people reduce the risks of climate change?"
+        ],
+  "responses": [
+"It is unequivocal that human influence has warmed the atmosphere, ocean and land.",
+"Air pollution Is Both Good and Bad",
+"Global Warming Is (Partially) Reversible",
+"We Lost 302.4 Billion Work Hours to Excessive Heat In 2019",
+"It Could Become Too Hot to Live in Many Places By the End of the Century",
+"Extreme heat events have become more frequent and severe",
+"Sea levels are rising faster today than ever before",
+"Average wildlife populations have dropped by 60 per cent in just over 40 years"
+  ]
+},
+{
+  "tag": "CO2",
+  "patterns": [
+        "Should we grow trees to remove carbon in the atmosphere?", "how bad is CO2?", "Where can I obtain information on the properties of CO2?", "How can I perform CO2 calculations of the carbon dioxide system in seawater?", "Is carbon dioxide an acid or a base?", "Is carbon dioxide toxic?", "Is carbon dioxide flammable or non-flammable gas?", "Is carbon dioxide dangerous?", "where is carbon dioxide?", "what are benefits of carbon dioxide?", "What are the benefits of carbon dioxide?","is carbon dioxide harmful?"
+        ],
+  "responses": [
+"CARBON DIOXIDE EXISTS NATURALLY IN THE ATMOSPHERE",
+"CARBON DIOXIDE LEVELS RISE IN CROWDED ROOMS",
+"CARBON DIOXIDE HAS NO TASTE, COLOUR OR SMELL",
+"CARBON DIOXIDE CAN BE USED TO INCREASE GROWTH OF FLOWERS, FRUIT AND VEGETABLES",
+"CARBON DIOXIDE AND CARBON MONOXIDE ARE TWO VERY DIFFERENT THINGS",
+"DRY ICE IS MADE OF CARBON DIOXIDE",
+"CARBON DIOXIDE IS USED TO DISPENSE BEER",
+"CARBON DIOXIDE CAN BE USED TO KEEP HOME FURNISHINGS CLEAN",
+"CARBON DIOXIDE CAN BE USED TO PUT OUT FIRES"
+
+  ]
+},
+{
+  "tag": "Pollution",
+  "patterns": [
+        "What are the natural causes of air pollution?", "How do automobiles pollute the air?", "About ozone layer.", "What is the greenhouse effect? What is the impact of the greenhouse effect?", "Is there an air pollution level that is safe for our health?", "Is acid rain air pollution?", "hat are the major air pollutants produced by humans? What are their effects?"
+        ],
+  "responses": [
+"Natural sources of air pollution include forest fires and volcanoes, which pollute the air with smoke and dust.",
+"Internal combustion engines, which run on gasoline or diesel, are common in automobiles. When gasoline or diesel is burned, various harmful gases are released, including carbon dioxide, carbon monoxide, sulphur dioxide, nitrogen dioxide, and others. Furthermore, automotive engines emit microscopic particles. As a consequence, automobiles pollute the atmosphere.",
+"The ozone layer serves as a protective layer in the atmosphere. It has the highest concentration of ozone of any layer of the atmosphere. However, when compared to other gases, ozone makes up a small percentage of the air in the ozone layer. This layer blocks the sun’s harmful UV rays from entering our atmosphere. UV rays cause skin cancer in people and animals and are also hazardous to plants.",
+"Carbon dioxide and methane are examples of greenhouse gases that trap solar energy and thus raise the atmospheric temperature. This is known as the greenhouse effect. Greenhouse effect tends to result in global warming.",
+"National air quality standards have been set in several countries. National standards might vary by nation and higher or lower than the relevant WHO guideline value. Determining which specific at-risk populations should be safeguarded by the guidelines and what level of risk is acceptable is a policy.",
+"Global warming is caused due to increase concentration of CO2 in the air"
+
+  ]
+},
+{
+  "tag": "ecology series",
+  "patterns": [
+        "What Are The Typical Vegetation And The Typical Fauna Of The Deserts?", "What Are The Typical Vegetation And The Typical Fauna Of The Tropical Forests?", "What Are The Processes That Autotrophic Beings Use To Produce Organic Material From Inorganic Substances?", "What Are Autotrophic Beings?", "What Are Heterotrophic Beings?", "What Is Ecology?", "What Are Species?", "What Is Population?", "What Is A Community? What Is The Difference Between The Concepts Of Community And Population?", "What Is The Difference Between Ecological Niche And Habitat?", "What Are Biotic Factors?"
+        ],
+  "responses": [
+"The predominant fauna of the desertic ecosystems is formed by reptiles, like lizards and snakes, terrestrial arthropods and small rodents. In these areas plants very adapted to dry climate may be found, like the cactus, that are plants that do not have real leaves and thus lose less water, along with grasses and bushes near places where water is available.",
+"Ecology is the field of Biology that studies the relations between living beings and between living beings and the environment.",
+"Species is the set of living beings able to cross among themselves generating fertile offspring.",
+"Population is the set of individuals of the same species found in a given place in a given time.",
+"Community is the set of populations of living beings that live in the same region and interact with each other.",
+"Ecological niche is the set of peculiar activities, resources, and strategies that a species explores to survive and reproduce. Habitat is the place where the species lives to explore its ecological niche.",
+"Biotic factors are the living beings (plants, animals, and microorganisms) that are part of a given environment. Image Diversity: biotic factors",
+"Abiotic factors are the nonliving elements that constitute a given environment, like light, temperature, minerals, water, gases, atmospheric pressure",
+"Ecosystem is a system composed of biotic and abiotic factors in interaction."
+
+  ]
+},
+{
+  "tag": "air pollution",
+  "patterns": [
+        "WHY IS IT SO IMPORTANT TO SOLVE AIR POLLUTION?", "WHAT IS AIR POLLUTION?", "HOW LONG HAS AIR POLLUTION BEEN A PROBLEM?", "WHERE DOES AIR POLLUTION COME FROM?", "WHERE DOES AIR POLLUTION COME FROM?", "IS AIR POLLUTION MAINLY A LOCAL PROBLEM OR CAN IT TRAVEL LONG DISTANCES?", "HOW DOES AIR POLLUTION AFFECT HUMAN HEALTH?", "IS ACID RAIN AIR POLLUTION?", "WHAT CAN I DO TO IMPROVE AIR QUALITY IN MY COMMUNITY?"
+        ],
+  "responses": [
+"Most sources of air pollution are structural and embedded in the economic processes underpinning modern society. Even in countries and communities with strong air pollution policies, individuals may not always have access to technologies or e.g., transportation options to meaningfully impact air pollution on their own. It will take a collective effort.",
+"Air pollution is all around us. Most people in the world live in areas with high levels of air pollution. It harms human health and wellbeing, reduces quality of life, and can negatively impact the economy and ecosystems. These impacts also disproportionately affect the most vulnerable people and communities.",
+"Air pollution is caused by gases and particles emitted to the atmosphere by a variety of human activities, such as the inefficient combustion of fuels, open burning of waste, agriculture, and farming. There are also natural sources contributing to air pollution, many of which are impacted by human activities such as forest fires, soil dust and salt in sea spray.",
+"Air pollution has been associated with humans for millennia, starting with the use of fire for cooking and warmth. Dangerously high levels of outdoor air pollution became a problem during the industrial revolution, where the massive use of coal gave rise to many episodes of serious urban air pollution.",
+"Air pollution comes from a wide array of sources, both natural and caused by human activities (anthropogenic). Natural sources include volcanic eruptions, sea spray, soil dust, natural vegetation fires and lightning. Some of the most common human activity-related sources include power generation, transportation, industry, residential heating and cooking, agriculture, solvent use, oil and gas production, waste burning and construction. Some sources, such as forest and savanna fires, and windblown mineral dust, occur naturally, but are exacerbated by human activities.",
+"Air pollution significantly impacts places near its source, but because it can be carried long distances in the atmosphere, air pollution created in one place, can also affect faraway places. For example, pollutants that form into fine particulate matter (PM 2.5 ), persistent organic pollutants (POPs) and ozone (O 3 ) can travel over hundreds or thousands of kilometres, causing regional and continental impacts.",
+"The air pollutant of greatest concern for human health, and for which there is the strongest evidence is fine particulate matter. This has a diameter of 2.5 micrometres or less, also known as PM 2.5 . These fine particles are invisible to the human eye and 40 times smaller than the width of a human hair.",
+"Children are particularly vulnerable to the damaging health effects of air pollution due to their unique susceptibility and exposure: Children’s respiratory tracts are more permeable, their breathing rate is twice as much as adults, and they take in more air per kilogram (kg) of their body weight. Children’s bodies, especially their lungs and brains, are still developing, with narrower blood vessels.",
+"While all individuals experience different levels of health impacts from air pollution, across large city or country populations, there is no evidence of a completely safe level of air pollution, especially in the case of particulate matter and NO 2 .",
+"Some air pollutants cause ‘acid rain’, a problem that received particular focus in Europe and North America in the 1980s and 90s. Sulphur dioxide (SO 2 ) and nitrogen oxides (NOx) react with water in the atmosphere, producing sulphuric acid and nitric acid that return to earth as acid rain.",
+"Air pollution and climate change are inherently linked. All major air pollutants have an impact on the climate and most share common sources with greenhouse gases (GHGs), especially related to the combustion of fossil fuels. They also aggravate each other in multiple ways."
+
+  ]
+},
+{
+  "tag": "atmosphere disasters",
+  "patterns": [
+        "why do we need atmosphere?", "What is air made of?", "Why is the ozone layer important to Earth?", "Is it true that at one time there was no oxygen?", "Why is the sky blue?", "How do we see wind?", "Where is the windiest place on Earth?", "What are clouds made of?", "How do clouds float?", "Why do jet airplanes leave white trails in the sky?", "Why are rain clouds gray?", "What causes a rainbow?", "How thick is a lightning bolt?", "How far away is thunder and lightning?", "Why are hurricanes called monster storms?", "How far can a tornado lift and carry items?"
+        ],
+  "responses": [
+"Air is a mixture of gases that circle Earth, kept in place by gravity. Air makes up Earth’s atmosphere. The air we breathe is 78 percent nitrogen gas, 21 percent oxygen, 0.9 percent argon, and 0.03 percent carbon dioxide, along with water vapor.",
+"Ozone, or three molecules of oxygen (O3, compared with the O2 that humans breathe), is a blanket in the atmosphere that covers Earth. The ozone layer is located between 9 and 25 miles (15 and 40 kilometers) up in the atmosphere, and it is produced by the interaction of the Sun’s radiation with certain air molecules.",
+"Oxygen is necessary for all humans, animals, and plant life to survive. When Earth was first formed, its atmosphere had no oxygen—the colorless, odorless, and tasteless gas that makes up about 20 percent of the air we breathe.",
+"The white light of the Sun consists of many wavelengths. When seen separately, each wavelength corresponds with a different color. The air molecules and particles of matter that make up Earth’s atmosphere scatter some of the Sun’s light as it travels to Earth, especially the shorter wavelengths that give us the color blue.",
+"A layer of air called the atmosphere surrounds Earth. The air within this layer moves from place to place when it warms up or cools down. This moving air is called wind. Winds move moisture and heat around the world, and they also produce much of our weather.",
+"Antarctica is the coldest, highest, windiest, driest, and iciest continent on Earth. Winds can sometimes reach up to 200 miles (322 kilometers) per hour for five hours per day.",
+"Clouds are formed from billions of minute water droplets and tiny ice crystals that float together in the sky. Each of the droplets in a cloud is about 100 times smaller than a raindrop.",
+"Although the water and ice in clouds may typically weigh tons, the weight of a cloud is spread out over a very large area. The cloud’s droplets are also very small—about one-hundred-thousandth of an inch across. A cloud’s individual particles are so small, in fact, that warm air rising from Earth’s surface is able to keep them floating in the air.",
+"Jets leave white trails, called contrails, in their paths for the same reason you can sometimes see your breath on a cold winter morning.",
+"Rain clouds are generally dark gray because light cannot penetrate them due to the deep and densely packed water droplets and ice inside the cloud. Generally, the color of a cloud depends on the cloud’s relationship to the sunlight.",
+"A rainbow is an arc that shows all the colors, with their different wavelengths, that make up visible light. Seven colors make up a rainbow, and they always appear in the same order: red, with the longest wavelength, is on the top, followed by orange, yellow, green, blue, indigo (a deep reddish-blue that is often difficult to see), and violet, which has the shortest wavelength.",
+"In a large rain cloud, as water droplets bump into each other and increase in size, they become electrically charged. This activity causes electric charges on the ground, too.",
+"As lightning flashes in the sky, it causes thunder. Light from the flash travels almost instantly to your eyes, but the sound of the thunder arrives a few seconds later.",
+"A hurricane, which is also known as a tropical cyclone or a typhoon, is a massive storm in which a vast system of dark clouds, heavy rains, and strong winds circle around a calm center.",
+"Tornadoes—violent, funnel-like storms of strong winds that usually form during thunderstorms—present danger to anyone nearby. These “twisters” can demolish anything in their path, including homes, people, cars, trees, animals, and even entire communities."
+  ]
+},
+{
+  "tag": "consume",
+  "patterns": [
+        "how does consumption affect our lives?", "how to consume electricity?", "how can we consume food?", "how does consumption affect the economy?", "why is consumption important?", "how can we reduce consumption?", "what increases consumption?", "what is the process of consumption?", "what is the use of consumption?", "where does consumption start?"
+        ],
+  "responses": [
+"Sustainable consumption and production is about doing more and better with less",
+"It is also about decoupling economic growth from environmental degradation, increasing resource efficiency and promoting sustainable lifestyles.",
+"Consume food, energy, and water"
+  ]
+},
+{
+  "tag": "dump",
+  "patterns": [
+"how can we avoid dumping?", "how does dumping affect the environment?", "why garbage dumping is the problem?", "what are dumping measures?", "where does dumping occur?", "where does dumping go?", "is dumping harmful?", "how to deal with dumping?", "what leads of dumping waste?", "what are the economic effects of dumping?"
+        ],
+  "responses": [
+"The hazardous waste collection industry saw a 6% decrease in revenue in 2020 due to lower demand.",
+" In just one generation, the earth’s production of manufactured chemicals increased by 40,000% to 400 million tons",
+"Across the country, large quantity hazardous waste generators (LQG) created more than 16.5 tons of characteristic hazardous waste in 2019. Texas was responsible for over half of this, at 9.9 tons.",
+"The chemical manufacturing industry manages over half (55%) of all TRI chemical waste.",
+"The majority of waste created in middle- or high-income countries is comprised of inorganic materials such as paper or plastic. In contrast, developing countries are responsible for producing over half of the earth’s total solid waste.",
+"Just 15% of the total waste generated by healthcare-related activities is considered hazardous.",
+"Most hazardous chemicals onsite for breweries include cleaning chemicals, sanitizers, and flammable liquids.",
+"Many brewery wastes can be used in “food industry compounds extraction, or they can be used in biotechnological processes that require additives for the food industry."
+  ]
+},
+{
+  "tag": "energy",
+  "patterns": [
+        "what is energy?", "how is energy created?", "why do we need energy?", "why is energy important?", "how is energy stored?", "how is energy transferred?", "what are the forms of energy?", "what is energy made of?", "where does energy come from?"
+        ],
+  "responses": [
+  "Renewable energy comes from perpetual sources like wind, solar or geothermal. Most electricity, though, is produced from nonrenewable sources like fossil fuels (coal, crude oil, natural gas, and uranium). They are nonrenewable because there is a finite amount of them that were formed from buried remains of plants and animals that lived millions of years ago.",
+"Saving energy can be as simple as switching from incandescent light bulbs to CFL or LED versions.",
+"About 40 percent of energy from all resources is used for electricity, which means that our resources are used more for that purpose than for any other.",
+"Geothermal energy comes from the Earth. It consists of hot water and hot rock that’s just a few miles beneath the Earth’s surface, and can go even deeper to very hot molten rock called magma. It’s considered clean and sustainable",
+"Electricity can be produced from fossil fuels, large hydro power plants, nuclear power plants, or renewables like wind or solar."
+  ]
+},
+{
+  "tag": "foodchain",
+  "patterns": [
+        "why is it called foodchain?", "what is the purpose of foodchain?", "how energy flows in food chain?", "what are the benefits of foodchain?", "how does foodchain improve the regular routine?", "what's foodchain?"
+        ],
+  "responses": [
+"The food chain is the transfer of energy from one species to another",
+"All living things need energy for growth and health",
+"Within a food chain, some living things create the energy (producers) and some use the energy (consumers).",
+"There are four different types of consumers in the animal kingdom. A carnivore is an animal that only eats other animals. An herbivore is an animal that only eats plants. An omnivore is an animal that eats both plants and animals. A scavenger is an animal that eats dead animals.",
+"Humans are at the end of the food chain. They eat both plants and animals that have consumed other forms of energy.",
+"There are more than 100,000 different types of decomposer organisms. These simpler nutrients are returned to the soil and can be used again by the plants. Then the energy chain begins all over again.",
+"A food chain usually begins with a plant (which gets its energy from sunlight and nutrients from the soil). The plant could then eaten by an insect. The insect is eaten by a bird. The bird is eaten by a large mammal. The mammal dies after being hit by a car. It decomposes and is broken down and used as food by bacteria and fungi."
+  ]
+},
+{
+  "tag": "Global warming",
+  "patterns": [
+        "what reduces global warming?", "what is the problem that causes global warming?", "how is global warming affecting us?", "how did global warming start?", "why is global warming harmful?", "what created global warming?", "what causes global warming?", "Does global warming affect living beings?", "How is global warming affecting animals?", "How is global warming affecting ocean?", "what reduces global warming?", "what disasterse does global warming cause?"
+        ],
+  "responses": [
+"Global warming is the unusually rapid increase in Earth’s average surface temperature over the past century primarily due to the greenhouse gases released by people burning fossil fuels.",
+"Earth has experienced climate change in the past without help from humanity. But the current climatic warming is occurring much more rapidly than past warming events.",
+"The impact of global warming is far greater than just increasing temperatures. Warming modifies rainfall patterns, amplifies coastal erosion, lengthens the growing season in some regions, melts ice caps and glaciers, and alters the ranges of some infectious diseases.",
+"Throughout its long history, Earth has warmed and cooled time and again. Climate has changed when the planet received more or less sunlight due to subtle shifts in its orbit, as the atmosphere or surface changed, or when the Sun’s energy varied.",
+"Global warming is the unusually rapid increase in Earth’s average surface temperature over the past century primarily due to the greenhouse gases released as people burn fossil fuels. The global average surface temperature rose 0.6 to 0.9 degrees Celsius",
+"The exchange of incoming and outgoing radiation that warms the Earth is often referred to as the greenhouse effect because a greenhouse works in much the same way.",
+"Gas molecules that absorb thermal infrared radiation, and are in significant enough quantity, can force the climate system. These type of gas molecules are called greenhouse gases."
+  ]
+},
+{
+  "tag": "wildlife",
+  "patterns": [
+"why conserve wildlife?", "why do we need trees?", "what is the most valuable species to conserve?", "why is our landscape like it is today ?", "why do we need to look after nature ?", "how can i get involved in conservation work?", "what is biodiversity and a biodiversity action plan?","Are cattle and wildlife compatible?","Should I develop water for wildlife?","Does oil/gas production affect wildlife?","How do I improve the habitat?","Is climate change real, if so does it affect wildlife?"
+        ],
+  "responses": [
+"The majority of medicinal plants are obtained from wild resources, making them a worldwide valued resource. Destructive harvesting usually leads to resource exhaustion and even extinction of species.",
+"wildlife is very essential to humanlife",
+"Animal, plant and marine biodiversity keeps ecosystems functional. Healthy ecosystems allow us to survive, get enough food to eat and make a living. When species disappear or fall in number, ecosystems and people—especially the world's poorest—suffer.",
+"It balances nature's elements and the preservation of food chains. Wildlife provides a large gene pool. It aids in the conservation of a region's species. Wildlife provides different products such as foods and drugs.",
+"By conserving wildlife, we're ensuring that future generations can enjoy our natural world and the incredible species that live within it. To help protect wildlife, it's important to understand how species interact within their ecosystems, and how they're affected by environmental and human influences.",
+"Wildlife includes all undomesticated living plant and animal species. All living organisms, including hu- mans, depend on other living things for survival. The benefits that wild species provide to people are the result of proper care and management of the wild species by people.",
+"The wildlife maintains the ecological balance on the Earth. The wildlife helps to preserve the animal and plant species from becoming extinct. The wildlife provides shelter to the wild animals. The wildlife helps in balancing the environment by eating insects as their food so that no species of animals are in excess.",
+"If there is no wildlife, the oxygen we breathe, the water we drink, the food we eat - they all depend on other forms of life. Without the rest of species on the planet, there would be no prosperity, no economy, no us."
+  ]
+},
+{
+  "tag": "environment",
+  "patterns": [
+        "How does natural farming benefit future life on Earth?", "In your opinion, what are the most effective methods of nature protection and biodiversity currently?", "Are carbon price based markets green markets? Why?", "What’s the definition of Environment?", "What do people do to protect the environment?", "How do people damage the environment?", "Do People in your country protect the environment?", "What can you do to protect the environment in your city?", "What would you do to save our environment?", "Why are environmental issues important?", "Is there a lot of pollution in your country?", "What are some of the effects of pollution in the environment?", "How can we prevent pollution?", "What can you start doing to pollute less?", "What are the effects of pollution on Animals?", "Would you like to own a hybrid or an electric car?", "What are ways to save energy?", "How can electricity and/or heat consumption be reduced?", "How can electricity and/or heat be saved during the climate crisis?", "Where is the overuse of millions of tons of chemical fertilizers and pesticides in agriculture going? How severely will it affect the environment?", "Where can I find environmental and health data for cities of the world?", "What is the most reliable approach for the conservation and sustainable use of medicinal plants?", "What is the best method to transform organic waste into a efficient and sustainable fertilizer without a significant harmful impact on the environment?", "What is the value of natural or environmental capital?", "What chemicals for reduction clearing of disperse dyestuff can be used in acidic bath?", "Are there any relations between the salinity of groundwater table with the soil profile above it?", "How have natural innovations stimulated bacteria-animal interactions by both cooperation and conflict?"
+        ],
+  "responses": [
+"The world is changing at an alarming rate. If we don’t take action soon, the environment will be beyond repair and pollution levels will reach a breaking point that can never be reversed.",
+"Whatever change you make, even if it’s something as simple as recycling today for the first time, every little bit helps!",
+"In countries where the development of renewable energy sources has been hampered in recent years, now the scale of the negative impact of the 2022 energy crisis is much deeper compared to countries where such neglect of green energy transformation is much less.",
+"arguably the current energy crisis will accelerate the processes of pro-climate and pro-environmental transformation of the economy, including the implementation of sustainability into the economy, the development of a green closed-loop economy, increase the scale of protection of biodiversity, biosphere and planetary climate.",
+"due to the different level of energy security, mix and structure of energy sources, the level of independence, the level of the cost of operating specific energy sources, the level of modernity and new technologies applied, the level of development of renewable and carbon-free energy sources, also the scale of the impact of the current energy crisis on the economy is uneven across countries.",
+"The aforementioned determinants of structural diversity, etc. of the energy sector in individual countries also the extent and nature of the acceleration of the processes of pro-climate transformation of the economy, including the transformation of the energy sector will probably vary.",
+"Taking into account the structural diversity of the energy sectors and the mix of energy sources in different countries, the acceleration of the processes of pro-environmental, pro-climate, green transformation of the energy sector in different countries will not be the same and will vary in terms of its nature, level and pace of development of certain types of energy sources.",
+"nature and direction will the current energy crisis accelerate the processes of pro-climate and pro-environmental transformation of the economy, including the implementation of sustainability into the economy, the development of a green closed-loop economy, increase the scale of protection of biodiversity, biosphere and planetary climate",
+"The more the cause of electric vehicles (of various sources) is accelerated and the more politicians (and political parties) step out of the international petroleum products bribery net, the more will the governments encourage the use of non-petroleum and non-gas vehicles and instruments.",
+"But it is a fact that they are afraid of discontinuing from investing in these multi-trillion source of money. Creating batteries that function effectively and long is not a problem. Some countries and states have already been into it, and successfully.",
+"I know of some international vehicle companies with electric vehicle wings but systematically discouraged the research and development in this realm in their own companies for more than 15 years.",
+"There is a lack of subsidies for insulating the facades of buildings and single-family houses, installing photovoltaics, installing heat pumps and other renewable energy solutions.",
+"Climate change is broad, it encompasses more than Green market. So it's will be difficult for the two to go at the same level",
+"An energy crisis is currently developing in many countries. In some countries, energy is still largely based on burning fossil fuels. Fossil fuel and electricity prices are now rising rapidly.",
+"Fossil fuels may run out in the coming autumn/winter season. In the country where I operate, the development of renewable energy sources has been slowed down over the past three decades. As a result, three quarters of electricity is still generated by combustion-based power generation based on burning fossil fuels.",
+"now that an energy crisis has emerged and the scale of the climate crisis is gradually increasing, a problem has arisen. The risk of a deep energy crisis is high because the scale of diversification of energy sources is low, renewable and carbon-free energy sources are hardly developed and fossil fuel prices are rising.",
+"Unfortunately, the government did not allocate these funds to the development of renewable energy. In addition, the issue of diversification of energy sources has also been neglected by decision-makers, yet the issue of diversification of energy sources is one of the key factors of energy security.",
+"At present, there is still not a single nuclear power plant in Poland and the rate of development of renewable and emission-free energy sources is slow due to the laws that have been in place for the last seven years restricting the development of renewable energy.",
+"Unfortunately, it will not be possible to rectify all these mistakes in a few months, to rectify the omissions made earlier, to build a nuclear power plant and to develop wind, solar, hydro, geothermal and the most modern and zero-emission hydrogen and fusion-based energy technology on a large scale.",
+"Carbon markets have become popular, locally and nationally, including in Canada as a way to address carbon pollution. And this raises the question, are carbon price based markets green markets? Why?",
+"They are not green markets because they are not cleared by a green market price, they are environmental externality management based markets.",
+"In the context of accelerating the development of industry, global production, exploitation of raw materials, pollutants and waste emissions, increasing greenhouse gas emissions, accelerating the global warming process, protection of the natural environment, natural ecosystems, nature protection and biodiversity is one of the main challenges of the 21st century.",
+"Maintain cleanliness to prevent pollution, use clean energy as much as possible, take care of natural plants and trees and increase them, and reduce overfishing of animals, birds and fish.",
+"Natural Farming help to conserve the soil and other microorganism. Healthy soil free from chemical pesticide will help to produce high yielding crops in future. Natural Farming means maintenance of the earth.",
+"Farmers have started using chemical fertilizers and pesticides to get more yield from crops, now it is used in high doses. Hence it should be controlled with alternate methods.",
+"Furthermore, overuse of these chemicals causes Release the warming gases especially from those contained halogens groups.",
+"So far my investigation led to WHO data and the OECD metropolitan database on air pollution. Are there other data sources, other indicators? Maybe not at the global scale but more regional (e.g. Europe, North America)?",
+"The majority of medicinal plants are obtained from wild resources, making them a worldwide valued resource. Destructive harvesting usually leads to resource exhaustion and even extinction of species. As a result, the long-term usage of medicinal herbs should be considered, as should good harvesting procedures.",
+"The volume of organic waste is growing exponentially, and in most countries, it's left untreated which is leading to tragic consequences for local and global environments. Agriculture, animal farming, food industries, and cities all produce organic waste on a regular basis.",
+"I think there are two approaches to treating organic waste to convert it into fertilizer depending on the waste composition. If the waste N content is high (animal protein) directly convert to fertilizer using common composting techniques, if not first feed to an anaerobic digester and collect the methane and use it as a fuel. The waste generated from the digester is a fertilizer.",
+"The influence of pH adjusted with different acids on the dyeability of polyester fabric. Clearing of dyed poly(lactic acid) fabrics under acidic and alkaline conditions",
+"At each standard of fieds, there's will be the limiting of potential risk of chemicals relating to their fied. All projects must follow this if there're items relevant.",
+"The salinity of groundwater doesn't suffice for simulation purposes. The initial salinity of soil profile is necessary.",
+"Evolution runs in perpetuity for billions of years, with innumerable remarkable innovations inspired and catalyzed by both cooperation and conflict. Bacteria in nature are categorized into beneficial and harmful ones. They have evolved the capacity to communicate chemically to coordinate attacks on others, and a willingness to commit suicide for the greater good of the community. At the very early stage of biological evolution Mother Nature conducted a great experiment: Bacteria and Archaea came together in a fusion event to",
+"Microbes frequently interact with each other within or upon their animal host, and a rapidly increasing number of studies now shows that these interactions can have substantial effects on host.",
+"From a systemic point of view, Green Markets are one of finalities of Green Economy. So, there is a two-way relationship between the both concepts, Green Market is created and enhanced by Green Economy, and this latest could not be implemented without Green Market. By other words, Green Market is a sub-system for Green Economy.",
+"Most of the studies are on the impact of climate change on precipitation, temperature, wildfire, and sea level rise. Tornados are another huge environmental response to climate change. Recent number of tornados present the threat in the coming years."
+
+  ]
+},
+{
+  "tag": "goodbye",
+  "patterns": ["Bye", "See you later", "Goodbye"],
+  "responses": [
+    "See you later, thanks for visiting",
+    "Have a nice day",
+    "Bye! Come back again soon."
+  ]
+},
+{
+  "tag": "thanks",
+  "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+  "responses": ["Happy to help!", "Any time!", "My pleasure"]
+},
+{
+  "tag": "Corruption",
+  "patterns": [
+    "what is corruption?","who is more corrupted","what is the punishment for corruption?","corrupted governments","money cheating case","how can corruption be prevented",
+    "What kinds of punishments are imposed on corrupted people?","what is the solution for corruption","How can governments prevent corruption",
+    "What are the cases filed if you are being guilty of being corrupted?"
+  ],
+  "responses": [
+    "Corruption should be prevented at all costs ","Punishment is critical for the corrupted politicians","Corruption is bad for constitution","Governments should take serious precautions to stop corruption",
+    "Stop corruption and help people"
+  ]
+},
+{
+  "tag": "people",
+  "patterns": [
+    "what are the fundamental rights of the people","how can people choose leaders","how much power people have?","how can people use their vote","how can people choose right leaders","change in political dimensions",
+    "how can people elect a leader?",
+    "Power of a man's vote",
+    "Best people in the country?"
+  ],
+  "responses": [
+    "We accept VISA, Mastercard and Paypal",
+    "We accept most major credit cards, and Paypal"
+  ]
+},
+{
+  "tag": "judiciary",
+  "patterns": [
+    "what is judiciary? ",
+    "How long does shipping take?",
+    "When do I get my delivery?"
+  ],
+  "responses": [
+    "Judiciaries are responsible for interpreting and applying a country’s laws",
+    "judiciary, branch of government whose task is the authoritative adjudication of controversies over the application of laws in specific situations."
+  ]
+},
+{
+  "tag": "democracy",
+  "patterns": [
+    "vote is used for elections",
+  "President of the people"
+
+  ],
+  "responses": [
+    "voting is vital for democracy",
+    "Your vote can make a difference",
+    "Vote for change",
+  "People make presidents great"
+  ]
+},	
+{
+  "tag": "government",
+  "patterns": [
+    "what do you mean by the government","who represents government", "which is the strongest government", "who will change the government?",
+"Which government will form in coming elections?","To what degree should governments take an active role in economic development policy in poor countries?","Which Constitutional Amendment protects ","the right of the people to keep and bear Arms"," which are the best government jobs","who will form the government ",
+    "Tell me something funny!",
+    "Do you know a joke?"
+  ],
+  "responses": [
+    "Government represents the people and the country",
+    "Government works for the people"," governments are vital in the constitution","Governments play a vital role in functioning of constitution"
+  ]
+},
+{
+  "tag": "leaders",
+  "patterns": ["who are the actual leaders","what is the process of electing leaders",
+    "how are leaders elected in democracy",
+    "leaders are important are they good",
+    "G7 leaders at summit La Malbaie, Quebec",
+"The “leaders” of all of our countries, including America, don’t represent the people. They represent the ruling class. Most don’t care so those in charge are free to do whatever they want. Soon all criticism of dear “leader” will be Hate Speech",
+" winning the election"
+  ],
+  "responses": [
+    "leaders are elected by the people",
+    "leaders are the integral part of the constitution",
+"Powerful leaders come from powerful nations",
+"People have the power to choose leaders"
+  ]
+},
+{
+  "tag": "constitution",
+  "patterns": [
+" what is constitution","How long did it take to create the Constitution?","Who was the youngest president? The oldest?","Who was the first president to live in the White House? ","who developed the constitution", "People make the constitution","Who was called the Father of the Constitution",
+    " Illinois Amendment 1 PASSES, which enshrines the right to collective bargaining in the Illinois Constitution. While the amendment did not get 60% of the amendment question vote, it met the other legal requirement to get more than 50% of total ballots cast in the electionDr. Ambedkar’s warning of political bhakti while presenting India’s constitution on 25/11/1949.",
+"Protestors in Shanghai chanting Xi Jinping step down, reading Chinese Constitution",
+"Trump’s pre-runoff message: Terminate the Constitution Illegal Strikes the term itself violates the Constitution and threatens every American.",
+    "Tell me something funny!",
+    "Do you know a joke?",
+"If we are not in Power, Constitution is in Danger"
+
+  ],
+  "responses": [
+    "Constitution protects the fundemental rights of the people",
+    "Constitution is vital for robust functionality of the system","Leaders are important in saving the rights of constitution","Constitution is useful for democracy "
+  ]
+},
+
+{
+  "tag": "Rigging",
+  "patterns": [
+    "rigging elections vote leader constitution effecting hope",
+     " people system what cheating trump usa ? ",
+    "Rigging is unfair",
+    "proof "
+  ],
+  "responses": [
+    "Rigging is unfair",
+    "Rigging is not good for democracy",
+  "Data suggest that Rigging is performed in the elections",
+  "People of USA feel that rigging took place in the elections",
+  "rigging is ridicilous"
+  ]
+},
+
+
+{
+"tag": "elections",
+  "patterns": [
+    " who will elections in india 2024","who is the chairman of bjp ","which is the ruling party in india","Party president","what are elections?","when are the elections ","who will win US elections ","President democracy prime minister election constitution who is people's leader of the people",
+"modi won bjp congress 2022 will win 2023 Elections Vice President Biden signs bill averting rail worker strike despite lack of paid sick days Potential red wave turns into trickle in ",
+"disappointing midterm elections for Republicans Russians and their",
+" take on the US mid term who fraud Council reveals major worries over forcing voters to show photo ID at 2023 elections:BREAKING: Twitter Has ‘Interfered In Elections’ Elon Musk Confirms Next May’s local elections will be the first time that people in England will have to bring an approved form of photographic Are you planning to vote in the midterm elections? identification in order to cast their voteelections." 
+  ,"who is winning the election"],
+  "responses": [
+"Elections are important to choose leaders",
+    "Elections can change political dimensions ",
+    "Elections are important in choosing leaders",
+  "Presidents recieve z+ security",
+  "Elections are conducted for every 4 or 5 years",
+    "Democracy is necessary for the constitution",
+    "Elections are essential components to choose the leaders",
+    "People are waiting for the elections"
+  ]
+},
+{
+  "tag": "masters",
+  "patterns": [
+      "how long does it take to get a masters degree?", 
+      "is masters degree hard", 
+      "where can I get a masters degree?",
+      "can I get a masters degree online?"
+  ],
+  "responses": [ 
+      "masters degree takes 2-3 years",
+      "masters degree can be challenging",
+      "most reputed universities offer master degrees program",
+      "you can enroll for an online or offline masters degree"
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},{
+  "tag": "research",
+  "patterns": [
+      "which field should I do research in?", 
+      "can I do reasearch while working?", 
+      "how to apply for research assistantship?",
+      "how to get a job in research and development?"
+  ],
+  "responses": [ 
+      "typically, people choose their reaserch topics based on their interests and expertise",
+      "some students prefer working while doing research",
+      "students can apply for research assistantship by contacting professors",
+      "students can get jobs in research and development at universities and IT companies"
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "", 
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "mba",
+  "patterns": [
+      "do I need a mba for becoming a manager?", 
+      "is mba more expensive?", 
+      "how long is mba?"
+  ],
+  "responses": [ 
+      "managers may or may not have mba degrees",
+      "mba degrees can be expensive",
+      "mba degrees are 1-2 years long"
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "student life",
+  "patterns": [
+      "how is student life?", 
+      "can a student have a part time job?",
+      "what are the benefits of student life?"
+  ],
+  "responses": [ 
+      "many students find student life to be enriching and exciting",
+      "some students work part time ",
+      "students make many valuable connections while studying"
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "university",
+  "patterns": [
+      "what is university?", 
+      "importance of university",
+      "university based education",
+  "where is the university"
+  ],
+  "responses": [ 
+      "A university is an institution of higher education and research which awards academic degrees in several academic disciplines.",
+      "an institution of higher learning providing facilities for teaching and research and authorized to grant academic degrees. ",
+      "An academic term (or simply term) is a portion of an academic year, the time during which an educational institution holds classes."
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "reasearch",
+  "patterns": [
+      "what is the reasearch at university?", 
+      "importance of research",
+      "where is the research happening"
+  ],
+  "responses": [ 
+      "Research is 'creative and systematic work undertaken to increase the stock of knowledge'. ",
+      "Research is a process of systematic inquiry that entails collection of data; documentation of critical information; and analysis and interpretation of that data/information, in accordance with suitable methodologies set by specific professional fields and academic disciplines. ",
+      "The purpose of research is to inform action."
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "projects",
+  "patterns": [
+      "do you have to work on projects while studying?", 
+      "do you have to work in teams for a project?"
+  ],
+  "responses": [ 
+      "students have to submit many projects during the degrees",
+      "you will be working on individual as well as team projects "
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "teacher",
+  "patterns": [
+    "who is a teacher",
+    "what kind of requirements do teachers professors require",
+    "How can teachers help student?",
+    "how much do professors teachers make",
+    "who is a principal",
+    "are teachers strict? "
+  ],
+  "responses": [
+    "Teachers can play a critical role in student upbringing",
+    "Teacher should be respected",
+    "Students can take help from the teachers",
+    "Teachers earn well."
+  ]
+},
+{
+  "tag": "graduate",
+  "patterns": [
+      "what is graduate study?", 
+      "importance of grduate",
+      "what is graduate research"
+  ],
+  "responses": [ 
+      "a person who has successfully completed a course of study or training, especially a person who has been awarded an undergraduate academic degree.",
+      "Graduate degrees include master's degrees, professional doctorates, and PhDs.",
+      "The purpose of research is to inform action.",
+  "A graduate degree is any degree that is above a bachelor's degree. This includes a master's degree or doctoral degree."
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "Invention ",
+  "patterns": [
+    "who invented discovery bulb phone camera medicine computer electricity current mouse iphone google microsoft apple ",
+    "invented discovery  something",
+    "objects",
+    "how much do professors teachers make",
+    "who is the founder discover of apple microsoft google discovered discover adobe ibm infosys buffalo university at buffalo",
+    "How one can invent anything? "
+  ],
+  "responses": [
+    "No amount of skillful invention can replace the essential element of imagination.",
+"The role of the teacher is to create the conditions for invention rather than provide ready-made knowledge.",
+  "Only creative people can invent",
+"One need to think out of the box to invent something"
+    
+  ]
+},
+{
+  "tag": "teacher",
+  "patterns": [
+    "who is a teacher",
+    "what kind of requirements do teachers professors require",
+    "How can teachers help student?",
+    "how much do professors teachers make",
+    "who is a principal",
+    "are teachers strict? "
+  ],
+  "responses": [
+    "Teachers can play a critical role in student upbringing",
+    "Teacher should be respected",
+    "Students can take help from the teachers",
+    "Teachers earn well."
+  ]
+},
+{
+  "tag": "undergraduate",
+  "patterns": [
+      "what is undergraduate study?", 
+      "importance of undergraduate",
+      "what is undergraduate research"
+  ],
+  "responses": [ 
+      "a person who has successfully completed a course of study or training, especially a person who has been awarded an underundergraduate academic degree.",
+      "undergraduatedegrees include master's degrees, professional doctorates, and PhDs.",
+      "The purpose of research is to inform action.",
+  "A undergraduate degree is any degree that is above a bachelor's degree. This includes a master's degree or doctoral degree."
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "graduate",
+  "patterns": [
+      "what is graduate study?", 
+      "importance of grduate",
+      "what is graduate research"
+  ],
+  "responses": [ 
+      "a person who has successfully completed a course of study or training, especially a person who has been awarded an undergraduate academic degree.",
+      "graduatedegrees include master's degrees, professional doctorates, and PhDs.",
+      "The purpose of research is to inform action.",
+  "A graduate degree is any degree that is above a bachelor's degree. This includes a master's degree or doctoral degree."
+  ],
+  "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "",
+        "clear": false
+  },
+  "entityType": "NA",
+  "entities": []
+},
+{
+  "tag": "Education importance",
+  "patterns": [
+        "How important is education?", "What characteristics should a good teacher have?", "What’s the Goal of Schooling?", "Which Skills Do Kids Need to Obtain in School?", "What Is Good Advice to Give to students?", " Is education Even Worth It?"
+        ],
+  "responses": [
+"Education systems are outdated. Schools make kids unhappy but don’t prepare them for the real world, and none of us know what the future holds anymore.",
+"Schools still prepare children for the job market and ignore other considerations. They aren’t encouraged to grow as individuals.",
+"The rate of change has increased so dramatically that we can no longer rely on school to teach us everything we need to know. We have to take learning into our own hands.",
+"The problem is that it is very hard to teach emotional intelligence and resilience. It is not something you can learn by reading a book or listening to a lecture.",
+"Education systems are outdated. Schools make kids unhappy but don’t prepare them for the real world, and none of us know what the future holds anymore.",
+"As long as our schooling systems don’t start enabling children to venture into what they like, we will stay on this road we’re on now. ",
+"In developing, low-income countries, every additional year of education can increase a person’s future income by an average of 10%",
+"Education empowers women to make healthy decisions about their lives.",
+"The youth literacy rates in South America and Europe are among the highest with 90-100% literacy.",
+"In developing, low-income countries, every additional year of education can increase a person’s future income by an average of 10%"
+
+  ]
+},
+{
+  "tag": "Corruption",
+  "patterns": [
+    "what is corruption?","who is more corrupted","what is the punishment for corruption?","corrupted governments","money cheating case","how can corruption be prevented",
+    "What kinds of punishments are imposed on corrupted people?","what is the solution for corruption","How can governments prevent corruption",
+    "What are the cases filed if you are being guilty of being corrupted?"
+  ],
+  "responses": [
+    "Corruption should be prevented at all costs ","Punishment is critical for the corrupted politicians","Corruption is bad for constitution","Governments should take serious precautions to stop corruption",
+    "Stop corruption and help people"
+  ]
+},
+{
+  "tag": "people",
+  "patterns": [
+    "what are the fundamental rights of the people","how can people choose leaders","how much power people have?","how can people use their vote","how can people choose right leaders","change in political dimensions",
+    "how can people elect a leader?","people power how much power do they have",
+    "Power of a man's vote",
+    "Best people in the country?"
+  ],
+  "responses": [
+    "People are integral components to democracy",
+    "People have the power to choose the leaders"
+  ]
+},
+{
+  "tag": "judiciary",
+  "patterns": [
+    "what is judiciary? ",
+    "who is incharge of system government constitution economy factors",
+    "What do you mean by judiciary?"
+  ],
+  "responses": [
+    "Judiciaries are responsible for interpreting and applying a country’s laws",
+    "judiciary, branch of government whose task is the authoritative adjudication of controversies over the application of laws in specific situations."
+  ]
+},
+{
+  "tag": "democracy",
+  "patterns": [
+    "vote is used for elections"," what is politics","what do you mean by the government",
+  "President of the people",
+  "what is democracy","what is politics","how democracy works","what is a legislature parliament","how voting works"
+
+  ],
+  "responses": [
+    "voting is vital for democracy",
+    "Your vote can make a difference",
+    "Vote for change",
+  "People make presidents great"
+  ]
+},	
+{
+  "tag": "government",
+  "patterns": [
+    " what is government","what do you mean by the government","who represents government", "which is the strongest government", "who will change the government?",
+"Which government will form in coming elections?","To what degree should governments take an active role in economic development policy in poor countries?","Which Constitutional Amendment protects ","the right of the people to keep and bear Arms"," which are the best government jobs","who will form the government ",
+    "Tell me something funny!",
+    "Do you know a joke?"
+  ],
+  "responses": [
+    "Government represents the people and the country",
+    "Government works for the people"," governments are vital in the constitution","Governments play a vital role in functioning of constitution"
+  ]
+},
+{
+  "tag": "leaders",
+  "patterns": ["who are the actual leaders","what is the process of electing leaders",
+    "how are leaders elected in democracy",
+    "leaders are important are they good",
+    "G7 leaders at summit La Malbaie, Quebec",
+"The “leaders” of all of our countries, including America, don’t represent the people. They represent the ruling class. Most don’t care so those in charge are free to do whatever they want. Soon all criticism of dear “leader” will be Hate Speech",
+" winning the election"
+  ],
+  "responses": [
+    "leaders are elected by the people",
+    "leaders are the integral part of the constitution",
+"Powerful leaders come from powerful nations",
+"People have the power to choose leaders"
+  ]
+},
+{
+  "tag": "constitution",
+  "patterns": ["who are responsibe for constitution","what do you mean by is constitution","when was the bill used",
+" what is constitution","How long did it take to create the Constitution?","Who was the youngest president? The oldest?","Who was the first president to live in the White House? ","who developed the constitution", "People make the constitution","Who was called the Father of the Constitution",
+    " Illinois Amendment 1 PASSES, which enshrines the right to collective bargaining in the Illinois Constitution. While the amendment did not get 60% of the amendment question vote, it met the other legal requirement to get more than 50% of total ballots cast in the electionDr. Ambedkar’s warning of political bhakti while presenting India’s constitution on 25/11/1949.",
+"Protestors in Shanghai chanting Xi Jinping step down, reading Chinese Constitution",
+"Trump’s pre-runoff message: Terminate the Constitution Illegal Strikes the term itself violates the Constitution and threatens every American.",
+    "Tell me something funny!",
+    "Do you know a joke?",
+"If we are not in Power, Constitution is in Danger"
+
+  ],
+  "responses": [
+    "Constitution protects the fundemental rights of the people",
+    "Constitution is vital for robust functionality of the system","Leaders are important in saving the rights of constitution","Constitution is useful for democracy "
+  ]
+},
+
+{
+  "tag": "Rigging",
+  "patterns": [
+    "rigging elections vote leader constitution effecting hope",
+     " people system what cheating trump usa ? ",
+    "Rigging is unfair",
+    "proof "
+  ],
+  "responses": [
+    "Rigging is unfair",
+    "Rigging is not good for democracy",
+  "Data suggest that Rigging is performed in the elections",
+  "People of USA feel that rigging took place in the elections",
+  "rigging is ridicilous"
+  ]
+},
+
+
+{
+"tag": "elections",
+  "patterns": [
+    " who will elections in india 2024","who is the chairman of bjp ","which is the ruling party in india","Party president","what are elections?","when are the elections ","who will win US elections ","President democracy prime minister election constitution who is people's leader of the people",
+"modi won bjp congress 2022 will win 2023 Elections Vice President Biden signs bill averting rail worker strike despite lack of paid sick days Potential red wave turns into trickle in ",
+"disappointing midterm elections for Republicans Russians and their",
+" take on the US mid term who fraud Council reveals major worries over forcing voters to show photo ID at 2023 elections:BREAKING: Twitter Has ‘Interfered In Elections’ Elon Musk Confirms Next May’s local elections will be the first time that people in England will have to bring an approved form of photographic Are you planning to vote in the midterm elections? identification in order to cast their voteelections." 
+  ,"who is winning the election"],
+  "responses": [
+"Elections are important to choose leaders",
+    "Elections can change political dimensions "
+  ]
+},
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
+      
+
